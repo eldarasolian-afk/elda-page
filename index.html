@@ -28,7 +28,10 @@
       position: relative;
     }
 
-    /* قاب ظریف */
+
+    /* =========================
+       FRAME
+       ========================= */
 
     .page::before {
       content: "";
@@ -37,7 +40,9 @@
       bottom: 15px;
       left: 15px;
       right: 15px;
+
       border: 1px solid #dedbd4;
+
       pointer-events: none;
     }
 
@@ -48,39 +53,42 @@
 
     .brand-area {
       text-align: center;
+
       padding-top: 40px;
       padding-bottom: 32px;
     }
 
     .brand {
       direction: ltr;
+
       font-family: Georgia, "Times New Roman", serif;
 
-      font-size: 67px;
-      font-weight: 700;
+      font-size: 64px;
+      font-weight: 500;
 
-      letter-spacing: 6px;
-      line-height: .95;
+      letter-spacing: 8px;
 
-      transform: scaleX(1.04);
+      line-height: 1;
 
-      margin-left: 6px;
+      margin-left: 8px;
     }
 
     .brand-sub {
-      margin-top: 16px;
+      margin-top: 15px;
 
       direction: ltr;
+
       font-family: Georgia, "Times New Roman", serif;
 
       font-size: 10px;
+
       letter-spacing: 3px;
 
       color: #77736d;
     }
 
     .brand-line {
-      width: 45px;
+      width: 44px;
       height: 1px;
 
       background: #202020;
@@ -95,11 +103,13 @@
 
     .intro {
       text-align: center;
-      margin-bottom: 27px;
+
+      margin-bottom: 28px;
     }
 
     .intro-title {
       font-size: 17px;
+
       font-weight: 500;
 
       margin-bottom: 8px;
@@ -107,6 +117,7 @@
 
     .intro-text {
       font-size: 13px;
+
       line-height: 2;
 
       color: #77736d;
@@ -121,24 +132,28 @@
       width: 100%;
 
       display: flex;
+
       flex-direction: column;
+
       gap: 13px;
     }
 
     .action {
       width: 100%;
 
-      min-height: 88px;
+      min-height: 70px;
 
       display: flex;
-      flex-direction: column;
+
       align-items: center;
+
       justify-content: center;
 
-      padding: 14px 15px;
+      position: relative;
+
+      padding: 11px 18px;
 
       text-decoration: none;
-      text-align: center;
 
       color: #171717;
 
@@ -148,32 +163,34 @@
 
       border-radius: 7px;
 
+      text-align: center;
+
+      box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.06);
+
       transition:
         transform .2s ease,
         border-color .2s ease,
+        box-shadow .2s ease,
         background .2s ease;
     }
 
-    .action:hover {
-      transform: translateY(-2px);
 
-      border-color: #9d9992;
-
-      background: #ffffff;
-    }
-
-
-    /* ICON */
+    /* آیکون کنار متن */
 
     .icon {
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
+
+      min-width: 40px;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
-      margin-bottom: 8px;
+      margin-left: 13px;
 
       border: 1px solid #c9c5bd;
 
@@ -181,20 +198,26 @@
     }
 
     .icon svg {
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
 
       fill: none;
+
       stroke: #202020;
 
       stroke-width: 1.5;
 
       stroke-linecap: round;
+
       stroke-linejoin: round;
     }
 
 
-    /* BUTTON TITLE */
+    /* متن دکمه */
+
+    .action-text {
+      text-align: center;
+    }
 
     .action-title {
       font-size: 15px;
@@ -204,9 +227,6 @@
       line-height: 1.5;
     }
 
-
-    /* BUTTON DESCRIPTION */
-
     .action-desc {
       margin-top: 3px;
 
@@ -214,7 +234,21 @@
 
       color: #85817a;
 
-      line-height: 1.6;
+      line-height: 1.5;
+    }
+
+
+    /* حالت لمس / هاور */
+
+    .action:hover {
+      transform: translateY(-2px);
+
+      border-color: #aaa59d;
+
+      background: #ffffff;
+
+      box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.09);
     }
 
 
@@ -298,6 +332,7 @@
       text-align: center;
 
       padding-top: 32px;
+
       padding-bottom: 15px;
     }
 
@@ -334,28 +369,32 @@
 
 
     /* =========================
-       SMALL MOBILE
+       MOBILE
        ========================= */
 
     @media (max-width: 380px) {
 
       .page {
         padding-left: 19px;
+
         padding-right: 19px;
       }
 
       .page::before {
         left: 10px;
+
         right: 10px;
       }
 
       .brand {
-        font-size: 58px;
-        letter-spacing: 5px;
+        font-size: 55px;
+
+        letter-spacing: 7px;
       }
 
       .brand-sub {
         font-size: 9px;
+
         letter-spacing: 2.5px;
       }
 
@@ -368,7 +407,25 @@
       }
 
       .action {
-        min-height: 84px;
+        min-height: 68px;
+
+        padding: 10px 15px;
+      }
+
+      .icon {
+        width: 37px;
+
+        height: 37px;
+
+        min-width: 37px;
+
+        margin-left: 11px;
+      }
+
+      .icon svg {
+        width: 17px;
+
+        height: 17px;
       }
 
       .action-title {
@@ -382,6 +439,7 @@
       .address {
         font-size: 12px;
       }
+
     }
 
   </style>
@@ -393,7 +451,9 @@
   <main class="page">
 
 
-    <!-- BRAND -->
+    <!-- =========================
+         BRAND
+         ========================= -->
 
     <header class="brand-area">
 
@@ -410,7 +470,9 @@
     </header>
 
 
-    <!-- INTRO -->
+    <!-- =========================
+         INTRO
+         ========================= -->
 
     <section class="intro">
 
@@ -425,92 +487,138 @@
     </section>
 
 
-    <!-- BUTTONS -->
+    <!-- =========================
+         BUTTONS
+         ========================= -->
 
     <section class="actions">
 
 
-      <!-- PHONE -->
+      <!-- تماس -->
 
-      <a class="action" href="tel:09021905376">
+      <a
+        class="action"
+        href="tel:09021905376"
+      >
 
         <span class="icon">
 
           <svg viewBox="0 0 24 24">
-            <path d="M6.5 3.5h3l1.5 4-2 1.5c1 2.2 2.8 4 5 5l1.5-2 4 1.5v3c0 .8-.7 1.5-1.5 1.5C10.8 18 6 13.2 6 7c0-.8.7-1.5 1.5-1.5z"/>
+
+            <path
+              d="M6.5 3.5h3l1.5 4-2 1.5c1 2.2 2.8 4 5 5l1.5-2 4 1.5v3c0 .8-.7 1.5-1.5 1.5C10.8 18 6 13.2 6 7c0-.8.7-1.5 1.5-1.5z"
+            />
+
           </svg>
 
         </span>
 
-        <div class="action-title">
-          تماس با ELDA
-        </div>
 
-        <div class="action-desc">
-          ثبت سفارش و دریافت مشاوره
-        </div>
+        <span class="action-text">
+
+          <div class="action-title">
+            تماس با ELDA
+          </div>
+
+          <div class="action-desc">
+            ثبت سفارش و دریافت مشاوره
+          </div>
+
+        </span>
 
       </a>
 
 
-      <!-- BALE -->
 
-      <a class="action"
-         href="https://ble.ir/ELDAwear"
-         target="_blank"
-         rel="noopener">
+      <!-- بله -->
+
+      <a
+        class="action"
+        href="https://ble.ir/ELDAwear"
+        target="_blank"
+        rel="noopener"
+      >
 
         <span class="icon">
 
           <svg viewBox="0 0 24 24">
+
             <path d="M5 6.5h14v9H9l-4 3v-12z"/>
+
             <path d="M8 10h8"/>
+
             <path d="M8 13h5"/>
+
           </svg>
 
         </span>
 
-        <div class="action-title">
-          پیام در بله
-        </div>
 
-        <div class="action-desc">
-          ارتباط مستقیم با ELDA
-        </div>
+        <span class="action-text">
+
+          <div class="action-title">
+            پیام در بله
+          </div>
+
+          <div class="action-desc">
+            ارتباط مستقیم با ELDA
+          </div>
+
+        </span>
 
       </a>
 
 
-      <!-- NESHAN -->
 
-      <a class="action"
-         href="https://nshn.ir/vbQIkqpx4phk"
-         target="_blank"
-         rel="noopener">
+      <!-- نشان -->
+
+      <a
+        class="action"
+        href="https://nshn.ir/vbQIkqpx4phk"
+        target="_blank"
+        rel="noopener"
+      >
 
         <span class="icon">
 
           <svg viewBox="0 0 24 24">
-            <path d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"/>
-            <circle cx="12" cy="10" r="2"/>
+
+            <path
+              d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"
+            />
+
+            <circle
+              cx="12"
+              cy="10"
+              r="2"
+            />
+
           </svg>
 
         </span>
 
-        <div class="action-title">
-          مسیریابی فروشگاه
-        </div>
 
-        <div class="action-desc">
-          مشاهده موقعیت ELDA در نشان
-        </div>
+        <span class="action-text">
+
+          <div class="action-title">
+            مسیریابی فروشگاه
+          </div>
+
+          <div class="action-desc">
+            مشاهده موقعیت ELDA در نشان
+          </div>
+
+        </span>
 
       </a>
+
 
     </section>
 
 
-    <!-- ADDRESS -->
+    <!-- =========================
+         ADDRESS
+         ========================= -->
 
     <section class="address-box">
 
@@ -523,15 +631,21 @@
       </div>
 
       <div class="address">
+
         عبدل‌آباد؛ خیابان شکوفه؛ خیابان رحمان؛
+
         <br>
-        بعد از کوچه بیست‌ونهم؛ پلاک ۳۸
+
+        بعد از کوچه ۲۹؛ پلاک ۳۸
+
       </div>
 
     </section>
 
 
-    <!-- SERVICES -->
+    <!-- =========================
+         SERVICES
+         ========================= -->
 
     <section class="services">
 
@@ -540,17 +654,25 @@
       </div>
 
       <div class="services-list">
+
         طراحی و دوخت سفارشی
+
         &nbsp; · &nbsp;
+
         مزون‌دوزی
+
         &nbsp; · &nbsp;
+
         تولید و خدمات پوشاک
+
       </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+         ========================= -->
 
     <footer class="footer">
 
