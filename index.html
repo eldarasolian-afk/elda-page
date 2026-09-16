@@ -3,118 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELDA | دوخت و خدمات پوشاک</title>
+
+  <title>ELDA | طراحی و دوخت</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap');
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      font-family: Tahoma, Arial, sans-serif;
-      background: #f7f6f4;
-      color: #222;
+      background: #f4f2ee;
+      color: #202020;
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 520px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 55px 25px 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .brand {
+      direction: ltr;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 58px;
+      font-weight: 500;
+      letter-spacing: 8px;
+      margin-left: 8px;
+      line-height: 1;
+    }
+
+    .brand-line {
+      width: 48px;
+      height: 1px;
+      background: #222;
+      margin: 22px auto 18px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      font-weight: 300;
+      color: #555;
+      text-align: center;
+      line-height: 2;
+      margin-bottom: 38px;
+    }
+
+    .links {
+      width: 100%;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 58px;
+      margin-bottom: 13px;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #202020;
+      background: #ffffff;
+      border: 1px solid #dedbd5;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 400;
+      transition: all .2s ease;
+    }
+
+    .link:hover {
+      background: #ece9e3;
+      transform: translateY(-1px);
+    }
+
+    .link-icon {
+      direction: ltr;
+      margin-left: 10px;
+      font-size: 17px;
+    }
+
+    .address-box {
+      width: 100%;
+      margin-top: 25px;
+      padding: 22px 20px;
+      background: transparent;
+      border-top: 1px solid #d5d1c9;
+      border-bottom: 1px solid #d5d1c9;
       text-align: center;
     }
 
-    .container {
-      max-width: 520px;
-      margin: auto;
-      padding: 45px 22px;
-    }
-
-    .logo {
-      font-family: Georgia, serif;
-      font-size: 48px;
-      letter-spacing: 5px;
+    .address-title {
+      font-size: 13px;
+      font-weight: 500;
       margin-bottom: 10px;
     }
 
-    .subtitle {
-      font-size: 15px;
-      color: #555;
-      margin-bottom: 35px;
-    }
-
-    .line {
-      width: 55px;
-      height: 1px;
-      background: #222;
-      margin: 0 auto 30px;
-    }
-
-    .button {
-      display: block;
-      text-decoration: none;
-      color: #222;
-      background: white;
-      border: 1px solid #ddd;
-      padding: 17px 20px;
-      margin: 14px 0;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: 0.2s;
-    }
-
-    .button:hover {
-      background: #eeeeec;
-    }
-
     .address {
-      margin-top: 35px;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 2.1;
+      color: #555;
+    }
+
+    .description {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
       line-height: 2;
-      color: #444;
+      color: #777;
     }
 
     .footer {
-      margin-top: 35px;
-      font-size: 12px;
-      color: #888;
+      margin-top: auto;
+      padding-top: 45px;
+      font-family: 'Playfair Display', Georgia, serif;
+      direction: ltr;
+      letter-spacing: 3px;
+      font-size: 11px;
+      color: #999;
+    }
+
+    @media (max-width: 380px) {
+      .page {
+        padding: 45px 18px 30px;
+      }
+
+      .brand {
+        font-size: 50px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <main class="page">
 
-    <div class="logo">ELDA</div>
+    <div class="brand">ELDA</div>
 
-    <div class="subtitle">
-      طراحی و دوخت | تولید و خدمات پوشاک
+    <div class="brand-line"></div>
+
+    <div class="tagline">
+      طراحی و دوخت<br>
+      تولید و خدمات پوشاک
     </div>
 
-    <div class="line"></div>
+    <section class="links">
 
-    <a class="button" href="tel:09021905376">
-      📞 تماس با ELDA
-    </a>
+      <a class="link" href="tel:09021905376">
+        <span class="link-icon">☎</span>
+        تماس با ELDA
+      </a>
 
-    <a class="button" href="https://ble.ir/ELDAwear">
-      💬 پیام در بله
-    </a>
+      <a class="link" href="https://ble.ir/ELDAwear" target="_blank">
+        <span class="link-icon">✉</span>
+        پیام در بله
+      </a>
 
-    <a class="button" href="https://nshn.ir/vbQIkqpx4phk">
-      📍 مسیریابی فروشگاه
-    </a>
+      <a class="link" href="https://nshn.ir/vbQIkqpx4phk" target="_blank">
+        <span class="link-icon">⌖</span>
+        مسیریابی فروشگاه
+      </a>
 
-    <div class="address">
-      <strong>آدرس فروشگاه</strong><br>
-      عبدل‌آباد؛ خیابان شکوفه؛ خیابان رحمان؛
-      بعد از کوچه بیست‌ونهم؛ پلاک ۳۸
+    </section>
+
+    <section class="address-box">
+
+      <div class="address-title">
+        آدرس فروشگاه
+      </div>
+
+      <div class="address">
+        عبدل‌آباد؛ خیابان شکوفه؛ خیابان رحمان؛
+        <br>
+        بعد از کوچه بیست‌ونهم؛ پلاک ۳۸
+      </div>
+
+    </section>
+
+    <div class="description">
+      طراحی و دوخت سفارشی · تولید · خدمات پوشاک
     </div>
 
     <div class="footer">
-      ELDA — Clothing & Tailoring
+      ELDA
     </div>
 
-  </div>
+  </main>
 
 </body>
 </html>
