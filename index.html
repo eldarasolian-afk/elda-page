@@ -14,8 +14,8 @@
 
     body {
       margin: 0;
-      background: #f7f5f1;
-      color: #171717;
+      background: #f4f1eb;
+      color: #252321;
       font-family: Tahoma, Arial, sans-serif;
     }
 
@@ -29,6 +29,7 @@
     }
 
     /* FRAME */
+
     .page::before {
       content: "";
       position: fixed;
@@ -36,15 +37,17 @@
       bottom: 15px;
       left: 15px;
       right: 15px;
-      border: 1px solid #dedbd4;
+      border: 1px solid #d9d2c7;
       pointer-events: none;
     }
 
+
     /* BRAND */
+
     .brand-area {
       text-align: center;
       padding-top: 40px;
-      padding-bottom: 32px;
+      padding-bottom: 30px;
     }
 
     .brand {
@@ -55,6 +58,7 @@
       letter-spacing: 8px;
       line-height: 1;
       margin-left: 8px;
+      color: #252321;
     }
 
     .brand-sub {
@@ -63,17 +67,19 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 10px;
       letter-spacing: 3px;
-      color: #77736d;
+      color: #827a70;
     }
 
     .brand-line {
-      width: 44px;
+      width: 48px;
       height: 1px;
-      background: #202020;
+      background: #9b8d7d;
       margin: 21px auto 0;
     }
 
+
     /* INTRO */
+
     .intro {
       text-align: center;
       margin-bottom: 30px;
@@ -82,16 +88,26 @@
     .intro-title {
       font-size: 19px;
       font-weight: 500;
+      color: #292622;
       margin-bottom: 9px;
     }
 
     .intro-text {
       font-size: 14px;
       line-height: 2;
-      color: #77736d;
+      color: #81786e;
     }
 
+    .intro-categories {
+      margin-top: 5px;
+      font-size: 13px;
+      color: #6f665d;
+      letter-spacing: .1px;
+    }
+
+
     /* BUTTONS */
+
     .actions {
       width: 100%;
       display: flex;
@@ -102,21 +118,28 @@
     .action {
       width: 100%;
       min-height: 76px;
+
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
       position: relative;
+
       padding: 12px 18px;
+
       text-decoration: none;
-      color: #171717;
-      background: #fffefa;
-      border: 1px solid #d6d2ca;
+      color: #252321;
+
+      background: #fcfaf6;
+
+      border: 1px solid #d6cec3;
       border-radius: 9px;
+
       text-align: center;
 
       box-shadow:
-        0 3px 8px rgba(0, 0, 0, 0.055),
-        0 1px 2px rgba(0, 0, 0, 0.025);
+        0 4px 10px rgba(72, 62, 50, 0.055),
+        0 1px 2px rgba(72, 62, 50, 0.035);
 
       transition:
         transform .2s ease,
@@ -125,7 +148,9 @@
         background .2s ease;
     }
 
+
     /* ICON */
+
     .icon {
       width: 44px;
       height: 44px;
@@ -137,9 +162,10 @@
 
       margin-left: 16px;
 
-      border: 1px solid #c8c4bc;
+      border: 1px solid #c7bbae;
       border-radius: 50%;
-      background: #faf9f6;
+
+      background: #f6f2ec;
     }
 
     .icon svg {
@@ -147,13 +173,15 @@
       height: 20px;
 
       fill: none;
-      stroke: #202020;
+      stroke: #5d544b;
       stroke-width: 1.45;
       stroke-linecap: round;
       stroke-linejoin: round;
     }
 
+
     /* TEXT */
+
     .action-text {
       flex: 1;
       text-align: center;
@@ -164,53 +192,66 @@
       font-size: 17px;
       font-weight: 500;
       line-height: 1.5;
+      color: #292622;
     }
 
     .action-desc {
       margin-top: 4px;
       font-size: 12px;
-      color: #7c7871;
+      color: #81786e;
       line-height: 1.6;
     }
 
     .action:hover {
       transform: translateY(-2px);
-      border-color: #aaa59d;
+
+      border-color: #b6a99a;
+
       background: #ffffff;
 
       box-shadow:
-        0 6px 14px rgba(0, 0, 0, 0.085),
-        0 2px 4px rgba(0, 0, 0, 0.035);
+        0 7px 16px rgba(72, 62, 50, 0.09),
+        0 2px 4px rgba(72, 62, 50, 0.04);
     }
 
+
     /* ADDRESS */
+
     .address-box {
       margin-top: 29px;
       padding: 24px 18px;
-      background: #eeece7;
+
+      background: #ebe6de;
+
+      border: 1px solid #ded7ce;
+
       text-align: center;
     }
 
     .address-label {
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 11px;
-      letter-spacing: .6px;
-      color: #77736d;
+      letter-spacing: .8px;
+      color: #82786d;
       margin-bottom: 9px;
     }
 
     .address-title {
       font-size: 16px;
       font-weight: 500;
+      color: #322e2a;
       margin-bottom: 10px;
     }
 
     .address {
       font-size: 14px;
       line-height: 2.15;
-      color: #5f5b55;
+      color: #625a52;
     }
 
+
     /* SERVICES */
+
     .services {
       text-align: center;
       padding: 27px 5px 4px;
@@ -218,7 +259,7 @@
 
     .services-title {
       font-size: 12px;
-      color: #88837b;
+      color: #8b8176;
       margin-bottom: 12px;
     }
 
@@ -226,11 +267,13 @@
       font-family: Georgia, "Times New Roman", serif;
       direction: rtl;
       font-size: 14px;
-      color: #55514b;
+      color: #5d554d;
       line-height: 2.2;
     }
 
+
     /* FOOTER */
+
     .footer {
       text-align: center;
       padding-top: 33px;
@@ -238,9 +281,9 @@
     }
 
     .footer-line {
-      width: 25px;
+      width: 28px;
       height: 1px;
-      background: #c7c3bc;
+      background: #bdb2a5;
       margin: 0 auto 14px;
     }
 
@@ -249,17 +292,19 @@
       font-family: Georgia, "Times New Roman", serif;
       font-size: 14px;
       letter-spacing: 4px;
-      color: #77736d;
+      color: #81776d;
       margin-left: 4px;
     }
 
     .footer-copy {
       margin-top: 8px;
       font-size: 9px;
-      color: #aaa69e;
+      color: #aaa197;
     }
 
+
     /* MOBILE */
+
     @media (max-width: 380px) {
 
       .page {
@@ -279,242 +324,4 @@
 
       .brand-sub {
         font-size: 9px;
-        letter-spacing: 2.5px;
-      }
-
-      .intro-title {
-        font-size: 18px;
-      }
-
-      .intro-text {
-        font-size: 13px;
-      }
-
-      .action {
-        min-height: 74px;
-        padding: 11px 14px;
-      }
-
-      .icon {
-        width: 42px;
-        height: 42px;
-        min-width: 42px;
-        margin-left: 13px;
-      }
-
-      .icon svg {
-        width: 19px;
-        height: 19px;
-      }
-
-      .action-title {
-        font-size: 16px;
-      }
-
-      .action-desc {
-        font-size: 11.5px;
-      }
-
-      .address-title {
-        font-size: 15px;
-      }
-
-      .address {
-        font-size: 13px;
-      }
-
-      .services-list {
-        font-size: 13px;
-      }
-    }
-
-  </style>
-</head>
-
-<body>
-
-  <main class="page">
-
-    <!-- BRAND -->
-    <header class="brand-area">
-
-      <div class="brand">ELDA</div>
-
-      <div class="brand-sub">
-        CLOTHING · TAILORING · PRODUCTION
-      </div>
-
-      <div class="brand-line"></div>
-
-    </header>
-
-
-    <!-- INTRO -->
-    <section class="intro">
-
-      <div class="intro-title">
-        طراحی و دوخت
-      </div>
-
-      <div class="intro-text">
-        تولید و خدمات تخصصی پوشاک
-      </div>
-
-    </section>
-
-
-    <!-- ACTIONS -->
-    <section class="actions">
-
-      <!-- PHONE -->
-      <a class="action" href="tel:09021905376">
-
-        <span class="icon">
-
-          <svg viewBox="0 0 24 24">
-            <path d="M6.5 3.5h3l1.5 4-2 1.5c1 2.2 2.8 4 5 5l1.5-2 4 1.5v3c0 .8-.7 1.5-1.5 1.5C10.8 18 6 13.2 6 7c0-.8.7-1.5 1.5-1.5z"/>
-          </svg>
-
-        </span>
-
-        <span class="action-text">
-
-          <div class="action-title">
-            تماس با ELDA
-          </div>
-
-          <div class="action-desc">
-            ثبت سفارش و دریافت مشاوره
-          </div>
-
-        </span>
-
-      </a>
-
-
-      <!-- BALE -->
-      <a class="action"
-         href="https://ble.ir/ELDAwear"
-         target="_blank"
-         rel="noopener">
-
-        <span class="icon">
-
-          <svg viewBox="0 0 24 24">
-            <path d="M5 6.5h14v9H9l-4 3v-12z"/>
-            <path d="M8 10h8"/>
-            <path d="M8 13h5"/>
-          </svg>
-
-        </span>
-
-        <span class="action-text">
-
-          <div class="action-title">
-            پیام در بله
-          </div>
-
-          <div class="action-desc">
-            ارتباط مستقیم با ELDA
-          </div>
-
-        </span>
-
-      </a>
-
-
-      <!-- MAP -->
-      <a class="action"
-         href="https://nshn.ir/vbQIkqpx4phk"
-         target="_blank"
-         rel="noopener">
-
-        <span class="icon">
-
-          <svg viewBox="0 0 24 24">
-            <path d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"/>
-            <circle cx="12" cy="10" r="2"/>
-          </svg>
-
-        </span>
-
-        <span class="action-text">
-
-          <div class="action-title">
-            مسیریابی فروشگاه
-          </div>
-
-          <div class="action-desc">
-            مشاهده موقعیت ELDA در نشان
-          </div>
-
-        </span>
-
-      </a>
-
-    </section>
-
-
-    <!-- ADDRESS -->
-    <section class="address-box">
-
-      <div class="address-label">
-        ELDA STORE
-      </div>
-
-      <div class="address-title">
-        آدرس فروشگاه
-      </div>
-
-      <div class="address">
-
-        عبدل‌آباد؛ خیابان شکوفه؛ خیابان رحمان؛
-
-        <br>
-
-        بعد از کوچه ۲۹؛ پلاک ۳۸
-
-      </div>
-
-    </section>
-
-
-    <!-- SERVICES -->
-    <section class="services">
-
-      <div class="services-title">
-        خدمات
-      </div>
-
-      <div class="services-list">
-
-        طراحی و دوخت سفارشی
-        &nbsp; · &nbsp;
-        مزون‌دوزی
-        &nbsp; · &nbsp;
-        تولید و خدمات پوشاک
-
-      </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-      <div class="footer-line"></div>
-
-      <div class="footer-brand">
-        ELDA
-      </div>
-
-      <div class="footer-copy">
-        DESIGN · TAILORING · PRODUCTION
-      </div>
-
-    </footer>
-
-  </main>
-
-</body>
-</html>
+       
