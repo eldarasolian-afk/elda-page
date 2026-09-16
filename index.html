@@ -11,10 +11,6 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
       background: #f7f5f1;
@@ -27,76 +23,102 @@
       max-width: 520px;
       min-height: 100vh;
       margin: auto;
-      padding: 34px 22px 28px;
+      padding: 30px 22px 28px;
       position: relative;
     }
 
-    /* قاب ظریف صفحه */
     .page::before {
       content: "";
       position: fixed;
-      top: 16px;
-      bottom: 16px;
-      left: 16px;
-      right: 16px;
+      top: 15px;
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
       border: 1px solid #dedbd4;
       pointer-events: none;
     }
 
-    /* ---------- BRAND ---------- */
+
+    /* =========================
+       BRAND
+       ========================= */
 
     .brand-area {
       text-align: center;
-      padding-top: 38px;
-      padding-bottom: 34px;
+      padding-top: 40px;
+      padding-bottom: 32px;
     }
 
     .brand {
       direction: ltr;
-      font-family: "Times New Roman", Georgia, serif;
-      font-size: 64px;
-      font-weight: 600;
-      letter-spacing: 12px;
-      line-height: 1;
-      margin-left: 12px;
+
+      /* فونت اصلی لوگوتایپ */
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 67px;
+      font-weight: 700;
+
+      /* فاصله کنترل شده بین حروف */
+      letter-spacing: 6px;
+
+      line-height: .95;
+
+      /* کمی کشیده‌تر شدن نوشته */
+      transform: scaleX(1.04);
+
+      margin-left: 6px;
     }
 
     .brand-sub {
-      margin-top: 14px;
+      margin-top: 16px;
+
       direction: ltr;
-      font-family: "Times New Roman", Georgia, serif;
+
+      font-family: Georgia, "Times New Roman", serif;
+
       font-size: 10px;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
+
       color: #77736d;
     }
 
     .brand-line {
-      width: 42px;
+      width: 45px;
       height: 1px;
+
       background: #202020;
-      margin: 22px auto 0;
+
+      margin: 21px auto 0;
     }
 
-    /* ---------- INTRO ---------- */
+
+    /* =========================
+       INTRO
+       ========================= */
 
     .intro {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .intro-title {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 500;
+
       margin-bottom: 9px;
     }
 
     .intro-text {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 2;
+
       color: #77736d;
     }
 
-    /* ---------- ACTIONS ---------- */
+
+    /* =========================
+       ACTIONS
+       ========================= */
 
     .actions {
       width: 100%;
@@ -104,16 +126,23 @@
 
     .action {
       position: relative;
+
       display: flex;
       align-items: center;
-      min-height: 72px;
+
       width: 100%;
+      min-height: 75px;
+
       margin-bottom: 12px;
-      padding: 12px 18px;
+      padding: 13px 17px;
+
       text-decoration: none;
       color: #171717;
+
       background: #fffefa;
+
       border: 1px solid #dedbd4;
+
       transition: all .2s ease;
     }
 
@@ -122,27 +151,40 @@
       border-color: #9d9992;
     }
 
+
+    /* ICON */
+
     .icon {
-      width: 40px;
-      height: 40px;
-      min-width: 40px;
+      width: 42px;
+      height: 42px;
+
+      min-width: 42px;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       margin-left: 14px;
+
       border: 1px solid #c9c5bd;
       border-radius: 50%;
     }
 
     .icon svg {
-      width: 18px;
-      height: 18px;
+      width: 19px;
+      height: 19px;
+
       fill: none;
       stroke: #202020;
+
       stroke-width: 1.5;
+
       stroke-linecap: round;
       stroke-linejoin: round;
     }
+
+
+    /* TEXT */
 
     .action-text {
       flex: 1;
@@ -150,77 +192,109 @@
     }
 
     .action-title {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 500;
+
       margin-bottom: 5px;
     }
 
     .action-desc {
-      font-size: 11px;
+      font-size: 12px;
+
       color: #85817a;
     }
 
     .arrow {
       direction: ltr;
+
       font-family: Georgia, serif;
-      font-size: 19px;
+
+      font-size: 21px;
+
       color: #99958e;
+
       margin-right: 8px;
     }
 
-    /* ---------- ADDRESS ---------- */
+
+    /* =========================
+       ADDRESS
+       ========================= */
 
     .address-box {
-      margin-top: 28px;
-      padding: 22px 18px;
+      margin-top: 27px;
+
+      padding: 23px 18px;
+
       background: #eeece7;
+
       text-align: center;
     }
 
     .address-label {
       font-size: 11px;
-      letter-spacing: .5px;
+
+      letter-spacing: .6px;
+
       color: #77736d;
+
       margin-bottom: 9px;
     }
 
     .address-title {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 500;
+
       margin-bottom: 10px;
     }
 
     .address {
-      font-size: 12px;
+      font-size: 13px;
+
       line-height: 2.15;
+
       color: #5f5b55;
     }
 
-    /* ---------- SERVICES ---------- */
+
+    /* =========================
+       SERVICES
+       ========================= */
 
     .services {
       text-align: center;
+
       padding: 25px 5px 4px;
     }
 
     .services-title {
-      font-size: 11px;
+      font-size: 12px;
+
       color: #88837b;
+
       margin-bottom: 12px;
     }
 
     .services-list {
-      font-family: "Times New Roman", Georgia, serif;
+      font-family: Georgia, "Times New Roman", serif;
+
       direction: rtl;
-      font-size: 12px;
+
+      font-size: 13px;
+
       color: #55514b;
-      line-height: 2;
+
+      line-height: 2.2;
     }
 
-    /* ---------- FOOTER ---------- */
+
+    /* =========================
+       FOOTER
+       ========================= */
 
     .footer {
       text-align: center;
+
       padding-top: 32px;
       padding-bottom: 15px;
     }
@@ -228,32 +302,44 @@
     .footer-line {
       width: 25px;
       height: 1px;
+
       background: #c7c3bc;
+
       margin: 0 auto 14px;
     }
 
     .footer-brand {
       direction: ltr;
-      font-family: "Times New Roman", Georgia, serif;
-      font-size: 13px;
-      letter-spacing: 5px;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 14px;
+
+      letter-spacing: 4px;
+
       color: #77736d;
-      margin-left: 5px;
+
+      margin-left: 4px;
     }
 
     .footer-copy {
       margin-top: 8px;
+
       font-size: 9px;
+
       color: #aaa69e;
     }
 
-    /* ---------- MOBILE ---------- */
+
+    /* =========================
+       SMALL MOBILE
+       ========================= */
 
     @media (max-width: 380px) {
 
       .page {
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: 19px;
+        padding-right: 19px;
       }
 
       .page::before {
@@ -262,30 +348,56 @@
       }
 
       .brand {
-        font-size: 55px;
-        letter-spacing: 9px;
+        font-size: 58px;
+        letter-spacing: 5px;
       }
 
       .brand-sub {
         font-size: 9px;
-        letter-spacing: 3px;
+        letter-spacing: 2.5px;
+      }
+
+      .intro-title {
+        font-size: 16px;
+      }
+
+      .intro-text {
+        font-size: 12px;
       }
 
       .action {
-        min-height: 68px;
+        min-height: 72px;
+      }
+
+      .action-title {
+        font-size: 14px;
+      }
+
+      .action-desc {
+        font-size: 11px;
+      }
+
+      .address {
+        font-size: 12px;
       }
     }
+
   </style>
 </head>
+
 
 <body>
 
   <main class="page">
 
+
     <!-- BRAND -->
+
     <header class="brand-area">
 
-      <div class="brand">ELDA</div>
+      <div class="brand">
+        ELDA
+      </div>
 
       <div class="brand-sub">
         CLOTHING · TAILORING · PRODUCTION
@@ -297,6 +409,7 @@
 
 
     <!-- INTRO -->
+
     <section class="intro">
 
       <div class="intro-title">
@@ -311,70 +424,108 @@
 
 
     <!-- ACTIONS -->
+
     <section class="actions">
 
+
       <!-- PHONE -->
+
       <a class="action" href="tel:09021905376">
 
         <span class="icon">
+
           <svg viewBox="0 0 24 24">
             <path d="M6.5 3.5h3l1.5 4-2 1.5c1 2.2 2.8 4 5 5l1.5-2 4 1.5v3c0 .8-.7 1.5-1.5 1.5C10.8 18 6 13.2 6 7c0-.8.7-1.5 1.5-1.5z"/>
           </svg>
+
         </span>
 
         <span class="action-text">
-          <div class="action-title">تماس با ELDA</div>
-          <div class="action-desc">ثبت سفارش و دریافت مشاوره</div>
+
+          <div class="action-title">
+            تماس با ELDA
+          </div>
+
+          <div class="action-desc">
+            ثبت سفارش و دریافت مشاوره
+          </div>
+
         </span>
 
-        <span class="arrow">‹</span>
+        <span class="arrow">
+          ‹
+        </span>
 
       </a>
 
 
       <!-- BALE -->
+
       <a class="action"
          href="https://ble.ir/ELDAwear"
          target="_blank"
          rel="noopener">
 
         <span class="icon">
+
           <svg viewBox="0 0 24 24">
             <path d="M5 6.5h14v9H9l-4 3v-12z"/>
             <path d="M8 10h8"/>
             <path d="M8 13h5"/>
           </svg>
+
         </span>
 
         <span class="action-text">
-          <div class="action-title">پیام در بله</div>
-          <div class="action-desc">ارتباط مستقیم با ELDA</div>
+
+          <div class="action-title">
+            پیام در بله
+          </div>
+
+          <div class="action-desc">
+            ارتباط مستقیم با ELDA
+          </div>
+
         </span>
 
-        <span class="arrow">‹</span>
+        <span class="arrow">
+          ‹
+        </span>
 
       </a>
 
 
       <!-- NESHAN -->
+
       <a class="action"
          href="https://nshn.ir/vbQIkqpx4phk"
          target="_blank"
          rel="noopener">
 
         <span class="icon">
+
           <svg viewBox="0 0 24 24">
             <path d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10z"/>
             <circle cx="12" cy="10" r="2"/>
           </svg>
+
         </span>
 
         <span class="action-text">
-          <div class="action-title">مسیریابی فروشگاه</div>
-          <div class="action-desc">مشاهده موقعیت ELDA در نشان</div>
+
+          <div class="action-title">
+            مسیریابی فروشگاه
+          </div>
+
+          <div class="action-desc">
+            مشاهده موقعیت ELDA در نشان
+          </div>
+
         </span>
 
-        <span class="arrow">‹</span>
+        <span class="arrow">
+          ‹
+        </span>
 
       </a>
 
@@ -382,6 +533,7 @@
 
 
     <!-- ADDRESS -->
+
     <section class="address-box">
 
       <div class="address-label">
@@ -402,6 +554,7 @@
 
 
     <!-- SERVICES -->
+
     <section class="services">
 
       <div class="services-title">
@@ -420,6 +573,7 @@
 
 
     <!-- FOOTER -->
+
     <footer class="footer">
 
       <div class="footer-line"></div>
@@ -433,6 +587,7 @@
       </div>
 
     </footer>
+
 
   </main>
 
